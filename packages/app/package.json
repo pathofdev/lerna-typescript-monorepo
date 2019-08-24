@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "logger": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
